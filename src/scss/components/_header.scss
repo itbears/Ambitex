@@ -1,0 +1,45 @@
+.header {
+    background-color: black;
+
+    &__wrapper {
+        max-width: 1160px;
+        margin: 0 auto;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    &__nav {
+        display: flex;
+
+        &-user {
+            &-list {
+                display: flex;
+                margin-right: 75px;
+            }
+
+            &-item {
+                &:not(:last-child) {
+                    margin-right: 30px;
+                }
+            }
+
+            &-link {
+                color: white;
+                font-family: 'Manrope';
+                font-weight: 200;
+                font-size: 18px;
+            }
+        }
+    }
+}
+.white-header{
+    background-color: white;
+}
+.white-back{
+    color: black;
+}

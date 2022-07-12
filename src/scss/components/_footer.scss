@@ -1,0 +1,122 @@
+.footer {
+    background-color: #191919;
+    margin-top: 133px;
+    &__wrapper {
+        max-width: 1160px;
+        margin: 0 auto;
+    }
+
+    &__information {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 100px;
+
+        &-pic {
+            margin-top: 95px;
+        }
+
+        &-question {
+            &-container {
+                float: right;
+                margin-top: 10px;
+            }
+
+            &-title {
+                font-weight: 600;
+                font-size: 30px;
+                color: white;
+            }
+
+            &-write {
+                float: right;
+                font-weight: 300;
+                font-size: 18px;
+                color: white;
+                border-bottom: 1px solid white;
+                &::after{
+                    content: url("../images/spear.svg");
+                }
+            }
+        }
+
+        &-service {
+            &-container {
+                display: flex;
+            }
+
+            &-box {
+                &:not(:last-child) {
+                    margin-right: 90px;
+                }
+            }
+
+            &-subtitle {
+                color: white;
+                font-weight: 400;
+                font-size: 18px;
+                margin-bottom: 15px;
+            }
+
+            &-item {
+                &:not(:last-child) {
+                    margin-bottom: 5px;
+                }
+            }
+
+            &-link {
+                color: white;
+                font-weight: 300;
+                font-size: 14px;
+            }
+        }
+
+        &-nav {
+            margin-top: 84px;
+
+            & &-link {
+                color: white;
+                font-weight: 400;
+                font-size: 18px;
+            }
+
+            &-list {
+                display: flex;
+                margin-bottom: 20px;
+            }
+
+            &-item {
+                &:not(:first-child) {
+                    margin-left: 43px;
+                }
+            }
+
+            &-politic {
+                color: #696969;
+                font-weight: 300;
+                font-size: 14px;
+                border-bottom: 1px solid #696969;
+                ;
+            }
+        }
+    }
+
+    &__contacts {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 99px;
+        padding-bottom: 32px;
+        &-text {
+            font-weight: 300;
+            font-size: 16px;
+            color: #616161;
+            margin-top: 5px;
+        }
+
+        &-link {
+            font-weight: 300;
+            font-size: 20px;
+            color: #A4A4A4;
+        }
+
+    }
+}

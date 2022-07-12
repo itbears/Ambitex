@@ -1,0 +1,59 @@
+.catalog {
+    &__title {
+        font-weight: 600;
+        font-size: 30px;
+    }
+
+    &__filter {
+        align-items: center;
+        display: flex;
+
+        &-paraments {
+            margin-left: 50px;
+            margin-top: 4px;
+        }
+
+        &-parament {
+            font-weight: 200;
+            font-size: 18px;
+            color: #000000;
+            &::after{
+                content: url("../images/arrow.svg");
+            }
+            &:not(:first-child) {
+                margin-left: 25px;
+            }
+        }
+    }
+
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        margin-top: 50px;
+    }
+
+    &__card {
+        background-color: #F5F5F5;
+        width: 360px;
+        height: 360px;
+
+        &-description {
+            max-width: 316px;
+            margin-left: 22px;
+
+            &-title {
+                font-weight: 600;
+                font-size: 20px;
+                color: #000000;
+            }
+
+            &-subtitle {
+                font-weight: 200;
+                font-size: 16px;
+                margin-top: 10px;
+                color: #000000;
+            }
+        }
+    }
+}

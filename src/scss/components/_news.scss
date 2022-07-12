@@ -1,0 +1,41 @@
+.news {
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 130px;
+    }
+
+    &__mailing {
+        max-width: 601px;
+    }
+
+    &__item {
+        &:not(:first-child) {
+            margin-top: 30px;
+        }
+    }
+
+    &__link {
+        color: #B9B9B9;
+        font-weight: 500;
+        font-size: 20px;
+
+        &:hover {
+            color: black;
+        }
+    }
+    &__mailing {
+        &-request {
+            &-subtitle {
+                font-weight: 500;
+                font-size: 35px;
+            }
+
+            &-text {
+                font-weight: 300;
+                font-size: 18px;
+                margin-top: 10px;
+            }
+        }
+    }
+}
