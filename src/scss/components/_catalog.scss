@@ -5,6 +5,7 @@
     }
 
     &__filter {
+        margin-top: 40px;
         align-items: center;
         display: flex;
 
@@ -37,7 +38,9 @@
         background-color: #F5F5F5;
         width: 360px;
         height: 360px;
-
+        &:hover{
+            border: 1px solid black;
+        }
         &-description {
             max-width: 316px;
             margin-left: 22px;
