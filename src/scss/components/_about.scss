@@ -1,0 +1,150 @@
+.about {
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__description {
+        max-width: 900px;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 35px;
+        margin-bottom: 50px;
+    }
+
+    &__subtitle {
+        font-weight: 300;
+        font-size: 18px;
+        max-width: 638px;
+    }
+
+    &__pic {
+        margin-top: 50px;
+    }
+
+    &__text {
+        margin-left: 62px;
+        margin-top: 129px;
+    }
+
+    &__mission {
+        &-text {
+            margin-top: 130px;
+            background-color: #981D15;
+            padding-top: 316px;
+            padding-left: 235px;
+            padding-right: 50px;
+            padding-bottom: 130px;
+            color: white;
+            font-weight: 300;
+            font-size: 18px;
+        }
+    }
+
+    &__target {
+        &-list {
+            margin-top: 130px;
+        }
+
+        &-item {
+            font-weight: 300;
+            font-size: 18px;
+
+            &::before {
+                content: url("../images/target.svg");
+                margin-right: 40px;
+            }
+
+            &:not(:first-child) {
+                margin-top: 20px;
+            }
+        }
+
+        &-text {
+            font-weight: 300;
+            font-size: 18px;
+            max-width: 730px;
+            margin-left: 156px;
+            margin-top: 80px;
+            margin-bottom: 15px;
+        }
+
+        &-link {
+            color: black;
+            font-weight: 300;
+            font-size: 14px;
+            margin-left: 347px;
+            border-bottom: 1px solid black;
+            padding-bottom: 5px;
+
+            &::after {
+                content: url("../images/black-arrow.svg");
+                margin-left: 10px;
+            }
+        }
+    }
+
+    &__specialist {
+        &-text {
+            margin-left: 62px;
+            margin-top: 82px;
+        }
+    }
+
+    &__service {
+        &-text {
+            padding-left: 203px;
+            padding-right: 60px;
+            padding-top: 329px;
+            padding-bottom: 130px;
+            margin-top: 130px;
+            background-color: #981D15;
+            color: white;
+            margin-bottom: 100px;
+        }
+
+        &-wrapper {}
+
+        &-link {
+            padding-top: 15px;
+            color: white;
+            border-bottom: 1px solid white;
+        }
+    }
+
+    &__sla-text {
+        margin-top: 30px;
+        margin-left: 62px;
+    }
+
+    &__sla-link {
+        display: inline-block;
+        margin-top: 15px;
+        margin-left: 480px;
+        color: black;
+        padding-bottom: 5px;
+        border-bottom: 1px solid black;
+        font-weight: 300;
+        font-size: 14px;
+    }
+
+    &__nav {
+        &-list {
+            position: sticky;
+            margin-top: 50px;
+            top: 10px;
+        }
+        &-item{
+            &:not(:last-child){
+                margin-bottom: 10px;
+            }
+        }
+        &-link {
+            font-weight: 200;
+            font-size: 18px;
+            color: black;
+        }
+    }
+}
