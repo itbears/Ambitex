@@ -1,0 +1,30 @@
+.robots{
+    margin-top: 130px;
+    &__container{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 50px;
+    }
+    &__box{
+        max-width: 386px;
+        height: 272px;
+        width: 100%;
+        &-pic{
+            text-align: center;
+            padding-top: 105px;
+        }
+        &-text{
+            max-width: 314px;
+            text-align: center;
+            margin-top: 40px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+}
+.border-right{
+    border-right: 1px solid #DDDDDD;
+}
+.border-bottom{
+    border-bottom: 1px solid #DDDDDD;
+}
