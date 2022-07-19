@@ -1,5 +1,5 @@
 .header {
-    background-color: black;
+    background-color: #131313;
 
     &__wrapper {
         max-width: 1160px;
@@ -33,20 +33,46 @@
                 font-family: 'Manrope';
                 font-weight: 200;
                 font-size: 18px;
-                &:hover{
-                    border-bottom: 1px solid white;
+                position: relative;
+
+                &::after {
+                    display: block;
+                    position: absolute;
+                    right: 0;
+                    bottom: -3px;
+                    width: 0;
+                    height: 1px;
+                    background-color: white;
+                    content: "";
+                    transition: width 0.5s;
+                }
+                &:hover {
+                    &::after{
+                    width: 100%;
+                    display: block;
+                    position: absolute;
+                    left: 0;
+                    bottom: -3px;
+                    height: 1px;
+                    background-color: white;
+                    content: "";
+                    transition: width 0.5s;
+                    }
                 }
             }
         }
     }
 }
-.white-header{
+
+.white-header {
     background-color: white;
 }
-.white-back{
+
+.white-back {
     color: black;
     padding-bottom: 2px;
-    &:hover{
+
+    &:hover {
         border-bottom: 1px solid black;
     }
 }

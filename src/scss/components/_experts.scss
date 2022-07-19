@@ -1,0 +1,26 @@
+.experts{
+    margin-top: 130px;
+    &__container{
+
+    }
+    &__description{
+        &-heading{
+            font-weight: 600;
+            font-size: 30px;
+        }
+        &-text{
+            font-weight: 300;
+            font-size: 16px;
+            max-width: 360px;
+            margin-top: 43px;
+            margin-bottom: 30px;
+        }
+        &-request{
+            font-weight: 300;
+            font-size: 18px;
+            color: black;
+            border-bottom: 1px solid black;
+            padding-bottom: 5px;
+        }
+    }
+}

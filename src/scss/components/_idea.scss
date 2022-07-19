@@ -1,0 +1,88 @@
+.idea {
+    &__mission {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 80px;
+
+        &-heading {
+            font-weight: 600;
+            font-size: 30px;
+        }
+
+        &-description {
+            font-weight: 300;
+            font-size: 18px;
+            max-width: 700px;
+        }
+    }
+
+    &__line {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 130px;
+
+        &-heading {
+            font-weight: 600;
+            font-size: 30px;
+            max-width: 668px;
+        }
+
+        &-list {
+            margin-top: 36px;
+        }
+
+        &-item {
+            font-weight: 300;
+            font-size: 18px;
+
+            &:not(:last-child) {
+                border-bottom: 1px solid black;
+                max-width: 560px;
+                padding-bottom: 30px;
+            }
+
+            &:not(:first-child) {
+                margin-top: 30px;
+            }
+        }
+
+        &-pic {
+            margin-top: 40px;
+        }
+    }
+
+    &__quot {
+        background-color: #131313;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 131px;
+
+        &-text {
+            font-weight: 300;
+            font-size: 18px;
+            color: white;
+            max-width: 500px;
+            margin-left: 75px;
+            margin-top: 80px;
+            margin-bottom: 80px;
+
+            &::before {
+                content: url('../images/quots1.svg');
+            }
+
+            &::after {
+                content: url('../images/quots2.svg');
+            }
+        }
+
+        &-link {
+            display: block;
+            font-weight: 300;
+            font-size: 14px;
+            color: white;
+            margin-right: 100px;
+            margin-top: 231px;
+            border-bottom: 1px solid white;
+        }
+    }
+}

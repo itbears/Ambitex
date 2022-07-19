@@ -1,0 +1,52 @@
+.intro {
+    background-color: #131313;
+    padding-bottom: 60px;
+    &__container {
+        display: flex;
+        position: relative;
+        // justify-content: space-between;
+    }
+
+    &__titles {
+        position: absolute;
+    }
+
+    &__title {
+        color: white;
+        font-weight: 600;
+        font-size: 35px;
+        max-width: 600px;
+        margin-top: 141px;
+    }
+    &__pic{
+        margin-left: auto;
+        margin-right: 60px;
+    }
+    &__subtitle {
+        color: white;
+        font-weight: 300;
+        font-size: 20px;
+        max-width: 400px;
+        margin-top: 197px;
+        display: flex;
+        &::before{
+            content: url('../images/arrow-bottom.svg');
+            display: block;
+            margin-right: 28px;
+            margin-top: 8px;
+            
+        }
+    }
+
+    &__link {
+        position: absolute;
+        right: 0px;
+        top: 352px;
+        background-color: #981D15;
+        padding: 53px 33px;
+        border-radius: 100%;
+        color: white;
+        font-weight: 400;
+        font-size: 18px;
+    }
+}
