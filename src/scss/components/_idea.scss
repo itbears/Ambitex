@@ -52,26 +52,32 @@
     }
 
     &__quot {
+        justify-content: space-between;
         background-color: #131313;
         display: flex;
-        justify-content: space-between;
         margin-top: 131px;
+        padding: 80px 100px;
+        align-items: flex-end;
 
         &-text {
-            font-weight: 300;
+            font-weight: 200;
             font-size: 18px;
             color: white;
             max-width: 500px;
-            margin-left: 75px;
-            margin-top: 80px;
-            margin-bottom: 80px;
+            position: relative;
 
             &::before {
                 content: url('../images/quots1.svg');
+                position: absolute;
+                left: -25px;
+                top: -8px;
             }
 
             &::after {
                 content: url('../images/quots2.svg');
+                position: absolute;
+                left: 220px;
+                bottom: -7px;
             }
         }
 
@@ -80,9 +86,9 @@
             font-weight: 300;
             font-size: 14px;
             color: white;
-            margin-right: 100px;
-            margin-top: 231px;
             border-bottom: 1px solid white;
+            line-height: 19px;
+            height: 25px;
         }
     }
 }

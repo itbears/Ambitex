@@ -10,18 +10,11 @@
     }
 
     &__item {
-        &:not(:first-child) {
-            margin-top: 30px;
-        }
-    }
-
-    &__link {
-        color: #B9B9B9;
         font-weight: 500;
         font-size: 20px;
-
-        &:hover {
-            color: black;
+        color: #B9B9B9;
+        &:not(:first-child) {
+            margin-top: 30px;
         }
     }
     &__mailing {
