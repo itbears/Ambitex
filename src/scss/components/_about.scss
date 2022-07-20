@@ -38,7 +38,7 @@
             padding-right: 50px;
             padding-bottom: 130px;
             color: white;
-            font-weight: 300;
+            font-weight: 200;
             font-size: 18px;
         }
     }
@@ -100,6 +100,7 @@
             padding-top: 329px;
             padding-bottom: 130px;
             margin-top: 130px;
+            font-weight: 200;
             background-color: #981D15;
             color: white;
             margin-bottom: 100px;
@@ -133,8 +134,7 @@
     &__nav {
         &-list {
             position: sticky;
-            margin-top: 50px;
-            top: 10px;
+            top: 180px;
         }
         &-item{
             &:not(:last-child){

@@ -1,7 +1,10 @@
 .intro {
     background-color: #131313;
     padding-bottom: 60px;
-    height: 100vh;
+    height: calc(100vh - 87.5px);
+    display: flex;
+    align-items: center;
+
     &__container {
         display: flex;
         position: relative;
@@ -15,14 +18,16 @@
     &__title {
         color: white;
         font-weight: 600;
-        font-size: 35px;
-        max-width: 600px;
+        font-size: 40px;
+        max-width: 680px;
         margin-top: 141px;
     }
-    &__pic{
+
+    &__pic {
         margin-left: auto;
         margin-right: 60px;
     }
+
     &__subtitle {
         color: white;
         font-weight: 300;
@@ -30,12 +35,13 @@
         max-width: 400px;
         margin-top: 197px;
         display: flex;
-        &::before{
+
+        &::before {
             content: url('../images/arrow-bottom.svg');
             display: block;
             margin-right: 28px;
             margin-top: 8px;
-            
+
         }
     }
 
@@ -49,5 +55,20 @@
         color: white;
         font-weight: 400;
         font-size: 18px;
+        animation: pulse 2s ease-in-out infinite;
+    }
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(.85);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(.85);
     }
 }
