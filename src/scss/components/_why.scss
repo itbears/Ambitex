@@ -6,12 +6,57 @@
         font-size: 30px;
         line-height: 41px;
     }
-    &__list{
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__list {
+        margin-top: 67px;
+        list-style-type: none;
         counter-reset: my-counter;
     }
-    &__item{
+
+    &__item {
         margin-top: 30px;
+        // position: relative;
+        // margin-left: 100px;
+        max-width: 758px;
+        position: relative;
+        left: 100px;
+
+        &:first-child {
+            &::before {
+                padding: 12px 24px 12px 25px;
+                top: -20px;
+            }
+        }
+
+        &::before {
+            content: counter(my-counter);
+            counter-increment: my-counter;
+            position: absolute;
+            font-family: 'Manrope';
+            left: -100px;
+            border: 1px solid black;
+            font-weight: 600;
+            font-size: 26px;
+            line-height: 36px;
+            border-radius: 100%;
+            padding: 12px 22px;
+            top: -5px;
+        }
     }
+
+    &__request {
+        margin-top: 280px;
+
+        &-link {
+            color: black;
+        }
+    }
+
     &__point {
         font-weight: 400;
         font-size: 20px;
@@ -23,22 +68,48 @@
         font-size: 18px;
         line-height: 145%;
         margin-top: 30px;
-        max-width: 758px;
+
+    }
+
+    &__portfolio {
+        margin-top: 56px;
+
+        &-heading {
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 25px;
+            margin-bottom: 30px;
+        }
+
+        &-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &-box {
+            display: flex;
+            background-color: #F5F5F5;
+            max-width: 360px;
+            width: 100%;
+
+            &-pic {}
+
+            &-text {
+                margin-left: 5%;
+                margin-top: auto;
+                margin-bottom: auto;
+                font-weight: 600;
+                font-size: 25px;
+                line-height: 34px;
+            }
+        }
     }
 }
-.point-one{
-    &::before{
-        content: url('../images/point1.svg');
+
+.point-three {
+    &::before {
+        top: -16px;
     }
-    display: inline-block;
-}
-.point-two{ 
-    &::before{
-        content: url('../images/point2.svg');
-    }
-}
-.point-three{
-    &::before{
-        content: url('../images/point3.svg');
-    }
+
+    margin-top: 50px;
 }

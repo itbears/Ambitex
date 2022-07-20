@@ -1,14 +1,16 @@
 .projects {
     margin-top: 130px;
+
     &__heading {
         font-weight: 600;
         font-size: 30px;
     }
+
     &__container {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 40px;
         margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 40px;
     }
 
     &__box {
