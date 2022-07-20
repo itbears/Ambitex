@@ -1,0 +1,44 @@
+.why {
+    margin-top: 130px;
+
+    &__heading {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 41px;
+    }
+    &__list{
+        counter-reset: my-counter;
+    }
+    &__item{
+        margin-top: 30px;
+    }
+    &__point {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    &__description {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 145%;
+        margin-top: 30px;
+        max-width: 758px;
+    }
+}
+.point-one{
+    &::before{
+        content: url('../images/point1.svg');
+    }
+    display: inline-block;
+}
+.point-two{ 
+    &::before{
+        content: url('../images/point2.svg');
+    }
+}
+.point-three{
+    &::before{
+        content: url('../images/point3.svg');
+    }
+}
