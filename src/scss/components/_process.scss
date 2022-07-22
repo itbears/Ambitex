@@ -19,6 +19,14 @@
             font-weight: 500;
             font-size: 20px;
             line-height: 27px;
+            display: flex;
+            align-items: center;
+            svg {
+                margin-left: 10px;
+            }
+        }
+        &:last-child &-step {
+            color: #981d15;
         }
 
         &-text {
@@ -31,7 +39,7 @@
 
     &__connect {
         margin-top: 130px;
-        background-color: #981D15;
+        background-color: #981d15;
         display: flex;
         justify-content: space-between;
         padding: 64px 102px 41px 60px;
@@ -53,6 +61,7 @@
                 font-size: 20px;
                 line-height: 27px;
                 color: white;
+                text-align: right;
 
                 &:not(:first-child) {
                     margin-top: 5px;

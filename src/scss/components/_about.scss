@@ -1,7 +1,12 @@
 .about {
+    padding-top: 120px;
     &__container {
         display: flex;
         justify-content: space-between;
+    }
+
+    &__img {
+        width: 100%;
     }
 
     &__description {
@@ -32,7 +37,7 @@
     &__mission {
         &-text {
             margin-top: 130px;
-            background-color: #981D15;
+            background-color: #981d15;
             padding-top: 316px;
             padding-left: 235px;
             padding-right: 50px;
@@ -101,17 +106,22 @@
             padding-bottom: 130px;
             margin-top: 130px;
             font-weight: 200;
-            background-color: #981D15;
+            background-color: #981d15;
             color: white;
             margin-bottom: 100px;
         }
 
-        &-wrapper {}
+        &-wrapper {
+        }
 
         &-link {
-            padding-top: 15px;
             color: white;
             border-bottom: 1px solid white;
+            margin-top: 10px;
+            display: inline-block;
+            svg {
+                margin-left: 10px;
+            }
         }
     }
 
@@ -129,15 +139,20 @@
         border-bottom: 1px solid black;
         font-weight: 300;
         font-size: 14px;
+        margin-top: 10px;
+        svg {
+            margin-left: 10px;
+        }
     }
 
     &__nav {
+        min-width: 160px;
         &-list {
             position: sticky;
             top: 180px;
         }
-        &-item{
-            &:not(:last-child){
+        &-item {
+            &:not(:last-child) {
                 margin-bottom: 10px;
             }
         }
@@ -146,5 +161,59 @@
             font-size: 18px;
             color: black;
         }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .about {
+        padding-left: 20px;
+        padding-right: 20px;
+        &__description {
+            margin-right: 50px;
+        }
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .about {
+        &__description {
+            margin-right: 0;
+        }
+        &__nav {
+            display: none;
+        }
+        &__mission {
+            &-text {
+                padding-top: 50px;
+                padding-left: 30px;
+                padding-right: 50px;
+                padding-bottom: 50px;
+            }
+        }
+    }
+    .about__target-item {
+        display: flex;
+    }
+    .about__target-item::before {
+        margin-right: 20px;
+    }
+    .about__target-text {
+        margin-left: 20px;
+    }
+    .about__text,
+    .about__specialist-text {
+        margin-left: 20px;
+    }
+    .about__service-text {
+        padding-left: 30px;
+        padding-right: 60px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .about__sla-link {
+        margin-left: 63px;
+    }
+    .about__target-link {
+        margin-left: 20px;
     }
 }

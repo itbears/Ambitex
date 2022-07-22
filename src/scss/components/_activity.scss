@@ -1,6 +1,6 @@
 .activity {
     margin-top: 130px;
-    &__heading-box{
+    &__heading-box {
         max-width: 619px;
         margin-left: auto;
         margin-right: 40px;
@@ -18,11 +18,14 @@
         margin-top: 5px;
         border-bottom: 1px solid black;
         padding-bottom: 5px;
+        & svg {
+            margin-left: 10px;
+        }
     }
 
     &__container {
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
     }
 
     &__pic {
@@ -33,18 +36,16 @@
         position: relative;
         cursor: pointer;
 
+        margin-bottom: -5px;
         &:hover &-img {
             filter: grayscale(0);
             transition: 0.5s;
         }
 
-        &-pic {
-            max-height: 386px;
-        }
-
         &-img {
             filter: grayscale(10);
             transition: 0.5s;
+            width: 100%;
         }
 
         &-text {
@@ -54,6 +55,43 @@
             font-size: 25px;
             bottom: 20px;
             left: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .activity {
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .activity {
+        &__container {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .activity {
+        &__heading {
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+        &__box {
+            &-text {
+                font-size: 14px;
+                padding-right: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .activity {
+        &__container {
+            grid-template-columns: repeat(1, 1fr);
         }
     }
 }

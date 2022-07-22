@@ -12,7 +12,7 @@
     &__item {
         font-weight: 500;
         font-size: 20px;
-        color: #B9B9B9;
+        color: #b9b9b9;
         &:not(:first-child) {
             margin-top: 30px;
         }
@@ -29,6 +29,34 @@
                 font-size: 18px;
                 margin-top: 10px;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .news {
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .news {
+        &__container {
+            flex-direction: column;
+        }
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        &__item {
+            margin-right: 10px;
+            white-space: nowrap;
+            font-size: 16px;
+            line-height: 20px;
+            margin-bottom: 10px;
+        }
+        &__item:not(:first-child) {
+            margin-top: 0;
         }
     }
 }
