@@ -1,0 +1,53 @@
+.error {
+    &__container {
+        position: relative;
+    }
+
+    &__title {
+        max-width: 549px;
+        max-height: 48px;
+        position: absolute;
+        margin: auto;
+        overflow: auto;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        font-weight: 800;
+        font-size: 35px;
+        line-height: 48px;
+        color: white;
+    }
+
+    &__text {
+        position: absolute;
+        margin: auto;
+        overflow: auto;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        max-width: 701px;
+        max-height: 503px;
+        color: white;
+        opacity: 0.35;
+        font-weight: 800;
+        font-size: 368.013px;
+        line-height: 503px;
+    }
+
+    &__link {
+        position: absolute;
+        bottom: 58px;
+        max-width: 176px;
+        margin: 0 auto;
+        right: 0;
+        left: 0;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 19px;
+        color: white;
+        padding-bottom: 5px;
+        border-bottom: 1px solid white;
+    }
+}
