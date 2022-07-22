@@ -1,11 +1,11 @@
 .service {
-    margin-top: 50px;
+    padding-top: 120px;
     &__title {
         font-weight: 600;
         font-size: 35px;
         line-height: 145%;
     }
-    &__pic{
+    &__pic {
         margin-top: 50px;
     }
     &__subtitle {
@@ -41,7 +41,7 @@
                 line-height: 41px;
                 top: 70px;
                 left: 165px;
-                color: #981D15;
+                color: #981d15;
             }
         }
 
@@ -55,7 +55,6 @@
             &:first-child {
                 margin-top: 15px;
             }
-
         }
     }
 
@@ -80,7 +79,7 @@
                 font-weight: 500;
                 font-size: 26px;
                 line-height: 36px;
-                border-bottom: 1px solid #981D15;
+                border-bottom: 1px solid #981d15;
                 padding-bottom: 15px;
             }
 
@@ -168,7 +167,7 @@
         }
 
         &-box {
-            background-color: #F5F5F5;
+            background-color: #f5f5f5;
             max-width: 360px;
             padding: 50px 45px 80px 55px;
 
@@ -179,7 +178,7 @@
                 position: relative;
 
                 &::before {
-                    content: url('../images/target.svg');
+                    content: url("../images/target.svg");
                     position: absolute;
                     top: 6px;
                     left: -25px;
@@ -190,7 +189,7 @@
 
     &__agreement {
         margin-top: 130px;
-        background-color: #981D15;
+        background-color: #981d15;
         display: flex;
         justify-content: space-between;
         padding: 60px 60px 66px 60px;
