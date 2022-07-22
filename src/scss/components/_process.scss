@@ -1,0 +1,72 @@
+.process {
+    margin-top: 130px;
+
+    &__heading {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 41px;
+    }
+
+    &__container {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 377px 421px 300px;
+        grid-gap: 31px;
+    }
+
+    &__box {
+        &-step {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 27px;
+        }
+
+        &-text {
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 25px;
+            margin-top: 15px;
+        }
+    }
+
+    &__connect {
+        margin-top: 130px;
+        background-color: #981D15;
+        display: flex;
+        justify-content: space-between;
+        padding: 64px 102px 41px 60px;
+
+        &-text {
+            font-weight: 600;
+            font-size: 25px;
+            line-height: 145%;
+            max-width: 500px;
+            color: white;
+        }
+
+        &-contacts {
+            display: flex;
+            flex-direction: column;
+
+            &-link {
+                font-weight: 300;
+                font-size: 20px;
+                line-height: 27px;
+                color: white;
+
+                &:not(:first-child) {
+                    margin-top: 5px;
+                }
+            }
+
+            &-name {
+                font-weight: 200;
+                font-size: 14px;
+                line-height: 19px;
+                text-align: end;
+                margin-top: 10px;
+                color: white;
+            }
+        }
+    }
+}
